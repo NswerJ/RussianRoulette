@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using DummyClient;
 
-public class TicTacToe : MonoBehaviour
+public class RoulletOfDeath : MonoBehaviour
 {
 
     // 게임 진행 상황.
@@ -38,7 +38,6 @@ public class TicTacToe : MonoBehaviour
         None = 0,       // 시합 중.
         Circle,         // ○승리.
         Cross,          // ×승리.
-        Tie,            // 무승부.
     };
 
     // 칸의 수.
@@ -166,7 +165,6 @@ public class TicTacToe : MonoBehaviour
     {
         // 시합 시작 신호 표시를 기다립니다.
         currentTime += Time.deltaTime;
-        //Debug.Log("UpdateReady");
 
         if (currentTime > waitTime)
         {
