@@ -52,7 +52,7 @@ public class SequenceManager : MonoBehaviour
         hostType = HostType.None;
         m_mode = Mode.Disconnection;
 
-        UI_MainMenu.SetActive(true);
+        UI_MainMenu.SetActive(false);
         UI_Game.SetActive(false);
     }
 
@@ -140,14 +140,14 @@ public class SequenceManager : MonoBehaviour
             m_mode = Mode.Game;
 
             GameObject game = GameObject.Find("TicTacToe");
-            game.GetComponent<TicTacToe>().GameStart();
+            game.GetComponent<RoulletOfDeath>().GameStart();
         }
     }
 
     void OnUpdateGame()
     {
         GameObject game = GameObject.Find("TicTacToe");
-        if (game.GetComponent<TicTacToe>().IsGameOver() == true)
+        if (game.GetComponent<RoulletOfDeath>().IsGameOver() == true)
         {
             m_mode = Mode.Disconnection;
         }
