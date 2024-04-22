@@ -25,6 +25,15 @@ public class GunController : MonoBehaviour
         AnimationCompo = transform.Find("Visual").GetComponent<GunAnimationTrigger>();
 
         _turnManager = TurnManager.Instance;
+        _turnManager.StartGameGunSetting(7); //임시완
+    }
+
+    private void Update() //임시완
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            ShootPlayer(1);
+        }
     }
 
     public void ShootPlayer(int playerID)

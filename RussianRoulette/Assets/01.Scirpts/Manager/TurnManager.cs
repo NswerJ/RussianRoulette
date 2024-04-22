@@ -5,27 +5,20 @@ using UnityEngine;
 
 public class TurnManager : MonoSingleton<TurnManager>
 {
-    private bool[] _deathBullets = { false };
+    private bool[] _deathBullets = null;
     public bool[] DeathBullets => _deathBullets;
 
     private int _currentTurn = 0;
     public int CurrentTurn => _currentTurn;
 
+    public bool MyTurn { get; private set; }
+    public bool OtherTurn { get; private set; }
+
     public void StartGameGunSetting(int maxBullet)
     {
-        SetDeathBullets(Function.ResetArray<bool>(maxBullet));
+        _deathBullets = Function.ResetArray<bool>(maxBullet);
 
-        RandomBullet(maxBullet);
-    }
-    
-    public void SetDeathBullets(bool[] deathBullets)
-    {
-        _deathBullets = deathBullets;
-    }
-
-    public void RandomBullet(int maxSize)
-    {
-        int random = Random.Range(0, maxSize);
+        int random = Random.Range(0, maxBullet);
         _deathBullets[random] = true;
     }
 
