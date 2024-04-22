@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ServerCore
-build_property.ProjectDir = E:\Code\TicTacToe(0419)\Server_TicTacToe\ServerCore\
+build_property.ProjectDir = D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

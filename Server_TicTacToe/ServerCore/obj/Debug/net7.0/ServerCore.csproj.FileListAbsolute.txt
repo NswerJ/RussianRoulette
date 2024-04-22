@@ -45,3 +45,15 @@ E:\Code\TicTacToe(0419)\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.
 E:\Code\TicTacToe(0419)\Server_TicTacToe\ServerCore\obj\Debug\net7.0\refint\ServerCore.dll
 E:\Code\TicTacToe(0419)\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.pdb
 E:\Code\TicTacToe(0419)\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ref\ServerCore.dll
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\bin\Debug\net7.0\ServerCore.deps.json
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\bin\Debug\net7.0\ServerCore.dll
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\bin\Debug\net7.0\ServerCore.pdb
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.AssemblyInfoInputs.cache
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.AssemblyInfo.cs
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.csproj.CoreCompileInputs.cache
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.sourcelink.json
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.dll
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\refint\ServerCore.dll
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ServerCore.pdb
+D:\Unity\RussianRoulette\Server_TicTacToe\ServerCore\obj\Debug\net7.0\ref\ServerCore.dll

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "H5uzYGS7zQiG6jpIdLdk50SEtvFpOi4nozKhhC3Ng84lllUBfBOrUiWbdJxvCsOfUun1//PkN9HqKL/9QrbdkQ==",
+  "dgSpecHash": "YhBv2PK0t4B/QmpesJqUiGecj6HRVN7OTGH5Njas5Xoz7vjRKgzMX0KxC3YPXxIdCTsRotZXwewKhCLgtlGPxg==",
   "success": true,
-  "projectFilePath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

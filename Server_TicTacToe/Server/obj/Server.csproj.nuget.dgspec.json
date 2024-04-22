@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\Server\\Server.csproj": {}
+    "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\Server\\Server.csproj": {}
   },
   "projects": {
-    "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj": {
+    "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
+        "projectUniqueName": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
         "projectName": "ServerCore",
-        "projectPath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
-        "packagesPath": "C:\\Users\\chs93\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\obj\\",
+        "projectPath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\chs93\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,29 +54,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\Server\\Server.csproj": {
+    "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\Server\\Server.csproj",
+        "projectUniqueName": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\chs93\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\Server\\obj\\",
+        "projectPath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\chs93\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,8 +105,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj": {
-                "projectPath": "E:\\Code\\TicTacToe(0419)\\Server_TicTacToe\\ServerCore\\ServerCore.csproj"
+              "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj": {
+                "projectPath": "D:\\Unity\\RussianRoulette\\Server_TicTacToe\\ServerCore\\ServerCore.csproj"
               }
             }
           }
@@ -117,12 +131,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
