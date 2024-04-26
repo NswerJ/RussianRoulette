@@ -118,11 +118,13 @@ public class RoulletOfDeath : MonoBehaviour
                 {
                     // 플레이어의 턴일 때의 처리.
                     PlayerTurn();
+                    Debug.Log("플레이어 턴");
                 }
                 else
                 {
                     // 상대의 턴일 때의 처리.
                     OpponentTurn();
+                    Debug.Log("적 턴");
                 }
                 break;
             case GameProgress.Result:
@@ -157,6 +159,7 @@ public class RoulletOfDeath : MonoBehaviour
             PullTrigger();
 
             Debug.Log("플레이어가 총쏨");
+            turn = Turn.Opponent;
         }
 
         // 총알이 발사되었는지 확인.
@@ -167,12 +170,7 @@ public class RoulletOfDeath : MonoBehaviour
             progress = GameProgress.Result;
             isGameOver = true;
         }
-        else
-        {
-            // 총알이 발사되지 않았을 때의 처리.
-            // 다음 턴으로 진행.
-            turn = Turn.Opponent;
-        }
+        
     }
 
     // 상대의 턴 처리 함수.
@@ -184,7 +182,7 @@ public class RoulletOfDeath : MonoBehaviour
             PullTrigger();
             Debug.Log("적이 총쏨");
 
-
+            turn = Turn.Player;
 
         }
 
@@ -196,12 +194,7 @@ public class RoulletOfDeath : MonoBehaviour
             progress = GameProgress.Result;
             isGameOver = true;
         }
-        else
-        {
-            // 총알이 발사되지 않았을 때의 처리.
-            // 다음 턴으로 진행.
-            turn = Turn.Player;
-        }
+        
     }
 
     // 방아쇠를 당기는 함수.
