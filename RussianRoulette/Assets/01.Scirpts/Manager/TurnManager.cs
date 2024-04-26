@@ -14,12 +14,23 @@ public class TurnManager : MonoSingleton<TurnManager>
     public bool MyTurn { get; private set; }
     public bool OtherTurn { get; private set; }
 
-    public void StartGameGunSetting(int maxBullet)
+    public void StartGameGunSetting(int maxBullet, Turn turnOrder)
     {
         _deathBullets = Function.ResetArray<bool>(maxBullet);
 
         int random = Random.Range(0, maxBullet);
         _deathBullets[random] = true;
+
+        if (turnOrder == Turn.Player)
+            MyTurn = true;
+        else
+            OtherTurn = true;
+    }
+
+    public void ChangeTurn()
+    {
+        MyTurn = !MyTurn;
+        OtherTurn = !OtherTurn;
     }
 
     public void AddCurrnetStack(int count = 1)
@@ -35,5 +46,8 @@ public class TurnManager : MonoSingleton<TurnManager>
         }
 
         _currentTurn = 0;
+
+        MyTurn = false;
+        OtherTurn = false;
     }
 }

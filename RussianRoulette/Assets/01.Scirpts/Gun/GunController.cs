@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using Random = UnityEngine.Random;
-using ETC;
 
 public class GunController : MonoBehaviour
 {
@@ -25,15 +23,7 @@ public class GunController : MonoBehaviour
         AnimationCompo = transform.Find("Visual").GetComponent<GunAnimationTrigger>();
 
         _turnManager = TurnManager.Instance;
-        _turnManager.StartGameGunSetting(7); //임시완
-    }
-
-    private void Update() //임시완
-    {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            ShootPlayer(1);
-        }
+        _turnManager.StartGameGunSetting(7, Turn.Player); //임시완
     }
 
     public void ShootPlayer(int playerID)
@@ -41,7 +31,7 @@ public class GunController : MonoBehaviour
         if(GunCompo.Shoot(_turnManager.DeathBullets[_turnManager.CurrentTurn]))
         {
             FireGunEvent?.Invoke();
-            Fire(playerID);
+            Fire();
         }
         else
         {
@@ -51,7 +41,7 @@ public class GunController : MonoBehaviour
         _turnManager.AddCurrnetStack();
     }
 
-    public void Fire(int playerID)
+    public void Fire()
     {
         _turnManager.GameReset();
     }

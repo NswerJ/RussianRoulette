@@ -26,6 +26,11 @@ public class Gun : MonoBehaviour
             OtherTurnShootMotion();
         }
 
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            MyTurnShootMotion();
+        }
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             BackToOrigin();

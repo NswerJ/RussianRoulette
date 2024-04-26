@@ -3,6 +3,11 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.Networking.Types;
 using UnityEngine.UIElements;
+public enum Turn
+{
+    Player = 0,     // 플레이어 턴.
+    Opponent,       // 상대 턴.
+};
 
 public class RoulletOfDeath : MonoBehaviour
 {
@@ -15,14 +20,7 @@ public class RoulletOfDeath : MonoBehaviour
         GameOver,       // 게임 종료.
         Disconnect,     // 연결 끊기.
 
-    };
-    
-
-    private enum Turn
-    {
-        Player = 0,     // 플레이어 턴.
-        Opponent,       // 상대 턴.
-    };
+    };  
 
     private enum ChamberState
     {
