@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/00.Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/00.Scenes/MainScene.unity
+    guid: f1eed026904f19246b1215549ceea825
+  - enabled: 1
     path: Assets/00.Scenes/Wonjun/!!Game.unity
     guid: f369d9cd40ff2944db2902166c1a6527
   m_configObjects: {}

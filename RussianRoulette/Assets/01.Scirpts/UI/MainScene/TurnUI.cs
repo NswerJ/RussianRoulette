@@ -25,8 +25,8 @@ public class TurnUI : PopupUI
     {
         string turn = string.Empty;
 
-        if (TurnManager.Instance.MyTurn) turn = "My Turn";
-        else turn = "Other Turn";
+        if (TurnManager.Instance.MyTurn) turn = "Host Turn";
+        else turn = "Client Turn";
 
         return turn;
     }

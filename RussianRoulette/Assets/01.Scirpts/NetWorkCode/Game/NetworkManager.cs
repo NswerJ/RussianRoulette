@@ -87,13 +87,6 @@ public class NetworkManager : MonoBehaviour
         return m_isConnected;
     }
 
-
-
-
-    void Start()
-    {
-        
-    }
     void Update()
     {
         List<IPacket> list = PacketQueue.Instance.PopAll();

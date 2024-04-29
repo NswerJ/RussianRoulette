@@ -15,20 +15,17 @@ public class GunController : MonoBehaviour
     public Action MissileGunEvent = null;
     public Action FireGunEvent = null;
 
-    private TurnManager _turnManager;
+    private TurnManager _turnManager => TurnManager.Instance;
 
     private void Awake()
     {
-        GunCompo = GetComponent<Gun>();
+        GunCompo = GetComponent<Gun>(); 
         AnimationCompo = transform.Find("Visual").GetComponent<GunAnimationTrigger>();
-
-        _turnManager = TurnManager.Instance;
-        _turnManager.StartGameGunSetting(7, Turn.Player); //юс╫ц©о
     }
 
-    public void ShootPlayer(int playerID)
+    public Turn ShootPlayer(Turn turn)
     {
-        if(GunCompo.Shoot(_turnManager.DeathBullets[_turnManager.CurrentTurn]))
+        if(GunCompo.Shoot(_turnManager.DeathBullets[_turnManager.CurrentTurn] == ChamberState.Bullet))
         {
             FireGunEvent?.Invoke();
             Fire();
@@ -39,6 +36,22 @@ public class GunController : MonoBehaviour
         }
 
         _turnManager.AddCurrnetStack();
+
+        StartCoroutine(WaitChangeTurn());
+
+        if (turn == Turn.Player) return Turn.Opponent;
+        else return Turn.Player;
+    }
+
+    private IEnumerator WaitChangeTurn()
+    {
+        yield return new WaitForSeconds(1f);
+
+        GunCompo.BackToOrigin();
+
+        yield return new WaitForSeconds(2f);
+
+        UIManager.Instance.ShowPopup("TurnPanel");
     }
 
     public void Fire()

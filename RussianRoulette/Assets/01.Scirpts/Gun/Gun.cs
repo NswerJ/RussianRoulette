@@ -19,24 +19,6 @@ public class Gun : MonoBehaviour
         return true;
     }
 
-    private void Update()//юс╫ц©о
-    {
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            OtherTurnShootMotion();
-        }
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            MyTurnShootMotion();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            BackToOrigin();
-        }
-    }
-
     public void MyTurnShootMotion()
     {
         transform.DORotate(new Vector3(16.753f, -102.45f, 38.758f), _duration);

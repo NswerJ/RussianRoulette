@@ -6,7 +6,7 @@ using UnityEngine;
 public class PopupUI : MonoBehaviour
 {
     [SerializeField]
-    protected float duration;
+    protected float duration = 1;
 
     protected CanvasGroup _canvasGroup;
 
@@ -14,7 +14,7 @@ public class PopupUI : MonoBehaviour
     {
         _canvasGroup = GetComponent<CanvasGroup>();
 
-        UIManager.Instance.AddPopupUI(this);
+        UIManager.Instance.AddPopupUI(this, this.gameObject.name);
     }
 
     public virtual void HidePanel()

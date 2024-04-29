@@ -1,30 +1,33 @@
 using ETC;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class TurnManager : MonoSingleton<TurnManager>
 {
-    private bool[] _deathBullets = null;
-    public bool[] DeathBullets => _deathBullets;
+    private ChamberState[] _deathBullets = null;
+    public ChamberState[] DeathBullets => _deathBullets;
 
-    private int _currentTurn = 0;
+    public int _currentTurn = 0;
     public int CurrentTurn => _currentTurn;
 
     public bool MyTurn { get; private set; }
     public bool OtherTurn { get; private set; }
 
-    public void StartGameGunSetting(int maxBullet, Turn turnOrder)
+    public Action OnFireEvent = null;
+
+    public GunController GunControllCompo { get; set; }
+
+    public override void Awake()
     {
-        _deathBullets = Function.ResetArray<bool>(maxBullet);
+        GunControllCompo = FindObjectOfType<GunController>();
+    }
 
-        int random = Random.Range(0, maxBullet);
-        _deathBullets[random] = true;
-
-        if (turnOrder == Turn.Player)
-            MyTurn = true;
-        else
-            OtherTurn = true;
+    public void BulletSetting(ChamberState[] chambers)
+    {
+        _deathBullets = chambers;
     }
 
     public void ChangeTurn()
@@ -40,11 +43,6 @@ public class TurnManager : MonoSingleton<TurnManager>
 
     public void GameReset()
     {
-        for (int i = 0; i < _deathBullets.Length; i++)
-        {
-            _deathBullets[i] = false;
-        }
-
         _currentTurn = 0;
 
         MyTurn = false;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UIManager : MonoSingleton<UIManager>
 {
+    private Dictionary<string, PopupUI> _popupDictionary = new();
     public List<PopupUI> popupUIList = new();
 
     private void Start()
@@ -19,13 +20,21 @@ public class UIManager : MonoSingleton<UIManager>
         }
     }
 
-    public void AddPopupUI(PopupUI popupUI)
+    public void AddPopupUI(PopupUI popupUI, string path)
     {
         popupUIList.Add(popupUI);
+        _popupDictionary.Add(path, popupUI);
     }
 
-    public void OnPopupUIShow(PopupUI popupUI)
+    public void ShowPopup(string path)
     {
-
+        if(_popupDictionary.TryGetValue(path, out PopupUI popupUI))
+        {
+            popupUI.ShowPanel();
+        }
+        else
+        {
+            Debug.LogError("Wrong Path!");
+        }
     }
 }
